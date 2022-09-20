@@ -1,0 +1,39 @@
+.game8 {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: repeat(4, 160px);
+    grid-gap: 10px;
+ }
+
+ .game16 {
+    display: grid;
+    grid-template-columns: repeat(8, 160px);
+    grid-template-rows: repeat(4, 160px);
+    grid-gap: 10px;
+ }
+
+ .game20 {
+    display: grid;
+    grid-template-columns: repeat(8, 160px);
+    grid-template-rows: repeat(5, 160px);
+    grid-gap: 10px;
+ }
+
+ .aktivan_igrac{
+   background-color: red;
+ }
+ .neaktivan_igrac{
+   background-color: white;
+}
+
+
+.aktivna_igra{
+   pointer-events: auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+.ne_aktivna_igra{
+   pointer-events: none;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}

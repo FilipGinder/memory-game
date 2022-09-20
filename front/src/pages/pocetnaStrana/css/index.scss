@@ -1,0 +1,251 @@
+@import "./variable.scss";
+
+// @font-face{
+//    font-family: pokemon;
+//    src: url(pokemon.ttf)
+// }
+.container {
+ //  font-family: tymes New Roman;
+ letter-spacing: 5px;
+//  margin: 0 auto;
+//  max-width: 100%;
+ padding: 20px;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.nsl {
+   text-align: center;
+}
+// #reset1{
+//    float: right;
+//    margin-right: 10px;
+// }
+// #nazad1{
+//    float: right;
+// }
+
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+// #game {
+//    display: grid;
+//    grid-template-columns: repeat(4, 160px);
+//    grid-template-rows: repeat(4, 160px);
+//    grid-gap: 10px;
+// }
+
+.card {
+   box-shadow: 0 3px 10px rgba(200, 200, 200, 0.9);
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+   transform-style: preserve-3d;
+}
+
+.front, .back{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   backface-visibility: hidden;
+   transition: transform 0.5s;
+}
+.front {
+   background-image: url(../../../../slike/help.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: black;
+   background-size: cover;
+}
+.back{
+   padding: 2px;
+}
+.rotated {
+   transform: rotateY(180deg);
+}
+#winer{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+}
+
+
+#uvod{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-content{
+   background-color: chocolate !important;
+}
+.kreiraj_mec_mod{
+   text-align: center;
+   height: 96px;
+}
+
+.sirina_sto{
+   width: 100%;
+}
+
+.select-kanali{
+   border: 1px solid black !important;
+}
+.start_podesavanje{
+   background-color: cyan;
+   padding: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+.rez_tab{
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+   background-color: cyan; 
+   border-radius: 10px;
+   margin-top: 10px !important;
+   padding-top: 10px;
+   text-align: center;
+}
+table{
+  
+ width: 100%;
+ 
+ 
+}
+th{
+   text-align: center !important;
+}
+
+td{
+   text-align: center;
+}
+select{
+   text-align: center;
+}
+
+.watch{
+text-align: center;
+background-color: #111827;
+width: 250px;
+height: 50px;
+//max-width: 360px;
+//margin: 4rem auto;
+//padding: 1rem 2rem;
+border-radius: 1rem;
+}
+.time{
+    font-size: 2rem;
+   // font-weight: 300;
+  // margin-bottom: 1rem;
+  margin: 0 auto;
+   color: white;
+}
+
+
+
+#login_dugme_div{
+	width:$proc_100; 
+	text-align: right;
+}
+#login_box_ceo{
+   width: $proc_100;
+   text-align: -webkit-center;
+   margin: 0;
+   position: absolute;
+   top: $proc_50;
+   left: $proc_50;
+   -ms-transform: translate(-$proc_50, -$proc_50);
+   transform: translate(-$proc_50, -$proc_50);
+}
+#login_box{
+   background-color: $boja_crvena !important;
+   max-width: 28rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   border-radius: 10px;
+   text-align: left;
+   z-index: 1;
+}
+input[type=text] {
+ width: $proc_100;
+ height: 45px;
+ border-radius: 5px;
+ padding: 3px 0px 3px 3px;
+ margin: 5px 1px 3px 0px;
+ border: 1px solid gray;
+}
+input[type=text]:focus {
+ box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+ padding: 3px 0px 3px 3px;
+ margin: 5px 1px 3px 0px;
+ border: 1px solid rgba(81, 203, 238, 1);
+ outline: $none;
+}
+input[type=password] {
+ width: $proc_100;
+ height: 45px;
+ border-radius: 5px;
+ padding: 3px 0px 3px 3px;
+ margin: 5px 1px 3px 0px;
+ border: 1px solid gray;
+}
+input[type=password]:focus {
+ box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+ padding: 3px 0px 3px 3px;
+ margin: 5px 1px 3px 0px;
+ border: 1px solid rgba(81, 203, 238, 1);
+ outline: $none;
+}
+// #login_dugme_div{
+//   width:$proc_100; 
+//   text-align: right;
+// }
+// #nazad{
+//  float: left;
+// }
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+
+   #login_box{
+     
+      max-width: $proc_100;
+  }
+  
+  #regist_box{
+    
+      max-width: $proc_100;
+  }
+  
+  
+  }
